@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Robot Control Panel</title>
+</head>
+
+<body>
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+$(document).ready(function() {
+$( "#left" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=left' });
+});
+$( "#right" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=right' });
+});
+$( "#forward" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=forward' });
+});
+$( "#forwardr" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=forwardr" });
+});
+$( "#forwardl" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=forwardl' });
+});
+$( "#back" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=back' });
+});
+$( "#backr" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=backr' });
+});
+$( "#backl" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=backl' });
+});
+$( "#stop" ).click(function() {
+  $.ajax({ url: 'http://192.168.0.129/control.php?command=stop' });
+});
+});
+</script>
+
+<div style="width:100%">
+  <button id="left" style="width:25%">Spin Left</button>
+  <button id="right" style="width:25%">Spin Right</button>
+</div>
+<br>
+<br>
+<br>
+<div style="width:100%">
+  <button id="forward" style="width:25%">Forward</button>
+  <button id="forwardr" style="width:25%">Forward Right</button>
+  <button id="forwardl" style="width:25%">Forward Left</button>
+</div>
+<br>
+<br>
+<br>
+<div style="width:100%">
+  <button id="back" style="width:25%">Back</button>
+  <button id="backl" style="width:25%">Back Left</button>
+  <button id="backr" style="width:25%">Back Right</button>
+</div>
+<br>
+<br>
+<br>
+<div style="width:100%">
+  <button id="stop" style="width:25%">Stop</button>
+</div>
+
+</body>
