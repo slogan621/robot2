@@ -2,8 +2,8 @@ from adafruit_motorkit import MotorKit
 import sys
 
 def right(kit):
-    kit.motor2.throttle = 0.0
-    kit.motor4.throttle = 0.5
+    kit.motor2.throttle = 0.5
+    kit.motor4.throttle = 0.0
 
 def left(kit):
     kit.motor2.throttle = 0.0
